@@ -1,22 +1,42 @@
-/* CSS untuk warna khas JKT48 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
 .jkt-red {
-    background-color: #ed1c24;
-    color: white;
+    background: linear-gradient(90deg, #ed1c24 0%, #8b0000 100%) !important;
 }
 
-/* Efek saat kartu member dilewati mouse */
+.member-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
 .member-card:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-    cursor: pointer;
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* Tambahan: Supaya gambar member ukurannya sama semua */
 .card-img-top {
-    height: 350px;
+    height: 400px;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-footer {
-    border-top: 5px solid#000 ;
+.member-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.btn-jkt {
+    background: linear-gradient(45deg, #ed1c24, #ff5e62);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px 20px;
 }
