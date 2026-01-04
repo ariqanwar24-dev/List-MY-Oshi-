@@ -1,0 +1,22 @@
+/* CSS untuk warna khas JKT48 */
+.jkt-red {
+    background-color: #ed1c24;
+    color: white;
+}
+
+/* Efek saat kartu member dilewati mouse */
+.member-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Tambahan: Supaya gambar member ukurannya sama semua */
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+footer {
+    border-top: 5px solid#000 ;
+}
